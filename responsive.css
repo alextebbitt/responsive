@@ -1,0 +1,63 @@
+body {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.column {
+  margin: 0;
+  padding: 0;
+}
+div > div,
+footer,
+header {
+  padding: 6px;
+  margin: 3px;
+}
+header {
+  background-color: rgb(4, 139, 235);
+  height: 40px;
+}
+#hero {
+  background-color: brown;
+  justify-content: center;
+  height: 160px;
+}
+#content {
+  background-color: green;
+  height: 180px;
+}
+#sidebar {
+  background-color: purple;
+  height: 180px;
+}
+
+footer {
+  background-color: grey;
+  height: 40px;
+}
+
+/*tablets*/
+@media only screen and (min-width: 600px) {
+    .container {
+      padding: 0;
+    }
+    .column {
+      display: flex;
+    }
+  }
+  
+
+/*desktop*/
+@media only screen and (min-width: 1025px) {
+  .column {
+    display: flex;
+  }
+  .container {
+      padding: 0 15%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div > div {
+    /* clear: both; */
+  }
+}
